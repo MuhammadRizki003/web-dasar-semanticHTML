@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Quicksand',sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ecdede25;
+    
+}
+header .navbar{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C62828;
+}
+header .navbar img{
+    width: 150px;
+}
+header .navbar .nav-list ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+header .navbar .nav-list li{
+    list-style-type: none;
+}
+header .navbar .nav-list li a{
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    color: white;
+    background-color: #C62828;
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+}
+header .navbar .nav-list li:hover a {
+    color: #C62828;
+    background-color: white;
+}
+main .content .beranda h1,main .content .download h3{
+    font-weight: lighter;
+}
+main{
+    padding: 0 8rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+}
+main .content{
+    flex: 2;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+main .content .beranda h1{
+    font-size: 40px;
+    color: #C62828;
+}
+main .content .beranda p{
+    font-size: 18px;
+}
+main .content .beranda{
+    margin-bottom: 1rem;
+}
+main .content .download img{
+    width: 200px;
+}
+main aside{
+    flex: 1;
+    display: flex;
+    order: -1;
+}
+main aside img{
+    width: 500px;
+}
+footer{
+    width: 100%;
+    
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #C62828;
+}
+footer h3{
+    color: white;
+}
+@media screen and (max-width: 1060px){
+    
+    header .navbar .nav-list ul{
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem 2rem 2rem;
+        height: 200%;
+    }
+    main .content .beranda h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    main .content .beranda p{
+        font-size: 15px;
+        text-align: center;
+    }
+    main .content .download{
+        text-align: center;
+    }
+    
+}    
+@media screen and (max-width: 720px){
+    header .navbar{
+        flex-direction: column;
+    }
+}
